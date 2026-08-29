@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>Jarvis</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+  <header class="topbar">
+
+    <button class="icon-btn" id="historyBtn">◷</button>
+
+    <div class="title">Jarvis</div>
+
+    <div class="top-actions">
+      <button class="icon-btn" id="brainBtn">♧</button>
+      <button class="icon-btn" id="settingsBtn">⚙</button>
+    </div>
+
+  </header>
+
+
+  <section class="core-section">
+
+    <div class="jarvis-orb" id="orb">
+      <div class="orb-points"></div>
+      <div class="orb-glow"></div>
+    </div>
+
+    <div id="status">Standby</div>
+
+  </section>
+
+
+  <main id="chat"></main>
+
+
+  <div id="timerCard" class="utility-card hidden">
+    <div class="utility-title">TIMER</div>
+    <div id="timerValue">00:00</div>
+  </div>
+
+
+  <div id="stopwatchCard" class="utility-card hidden">
+    <div class="utility-title">STOPWATCH</div>
+    <div id="stopwatchValue">00:00:00</div>
+  </div>
+
+
+  <section class="input-area">
+
+    <button class="bottom-btn" id="cancelBtn">×</button>
+
+    <button class="mic-btn" id="micBtn">
+      <span>♩</span>
+    </button>
+
+    <button class="bottom-btn" id="keyboardBtn">⌨</button>
+
+  </section>
+
+
+  <div id="manualBox" class="manual-box hidden">
+
+    <input
+      id="commandInput"
+      type="text"
+      placeholder="Talk to Jarvis..."
+      autocomplete="off">
+
+    <button id="sendBtn">↑</button>
+
+  </div>
+
+
+  <div class="footer-status">
+    JARVIS • LOCAL SYSTEM • NO API
+  </div>
+
+</div>
+
+
+<div id="settingsPanel" class="side-panel hidden">
+
+  <div class="panel-title">JARVIS SETTINGS</div>
+
+  <div class="setting-row">
+    Wake word
+    <span id="wakeState">ON</span>
+  </div>
+
+  <div class="setting-row">
+    Voice
+    <span>ON</span>
+  </div>
+
+  <div class="setting-row">
+    Local memory
+    <span>ON</span>
+  </div>
+
+  <div class="setting-row">
+    Auto execute
+    <span>ON</span>
+  </div>
+
+  <button id="closeSettings">Close</button>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
